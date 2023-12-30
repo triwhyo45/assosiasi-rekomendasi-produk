@@ -29,7 +29,7 @@ def user_input_feature():
     item = st.selectbox("Item Name", itemList)
     month = st.select_slider("Month", ['January','February','March','April','May','June','July','August','September','October','November','December'])
     day = st.select_slider("Day", ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'])
-    support = st.select_slider("Support", 0.01,0.1,0.05)
+    support = st.select_slider("Support", [0.01,0.02,0.03,0.04,0.05,0.06,0.07,0.08,0.09,0.1])
     return item,month,day,support
 
 item, month, day, support = user_input_feature()
